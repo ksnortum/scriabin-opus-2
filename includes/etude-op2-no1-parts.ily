@@ -15,7 +15,7 @@ rightHandUpper = \relative {
   \voiceOne 
   <e cs'>8 <e ds'> <cs' e> <cs fs> <e gs> <cs e cs'> |
   b'8. a16 a2 |
-  <fs, cs' fs>8 <a gs'> <fs' a> <cs gs'> <fs cs'> <fs cs' fs> |
+  <fs, cs' fs>8 <a gs'> <fs' a> <cs b'> <fs cs'> <fs cs' fs> |
   <e e'>8. <ds ds'>16 q2 |
   <e gs cs>8 <e ds'> <cs' e> fs <e gs> <cs gs' cs> |
   b'8. gs16 gs4 e |
@@ -28,7 +28,11 @@ rightHandUpper = \relative {
   <b, ds gs>8 <b as'> <gs' b> <ds cs'> <b' ds> gs' |
   fs8. es16 es2 |
   \key bf \minor
-  <gf, bf ef>8 <gf f'> <ef' gf> <f af> bf <ef, bf' ef> |
+  % In SrcA, the second chord of beat 2 is <f af>, but SrcB has <ef af>. Follow
+  % SrcB to more closely align with similar right-hand figurations in other
+  % measures, namely that the lower note of the chord is in unison with the
+  % rightHandLower part, which sustains that note for a quarter note duration.
+  <gf, bf ef>8 <gf f'> <ef' gf> <ef af> bf' <ef, bf' ef> |
   df'8. bf16 bf4 gf |
   f8. df16 df4 f |
   df8. bf16 bf8 r r4 |
@@ -48,7 +52,12 @@ rightHandUpper = \relative {
   
   \barNumberCheck 25
   \key cs \minor
-  <gs bs e> <gs bs ds> \acciaccatura { e' } <fs, bs ds> <fs bs css> <fs bs ds>
+  % In SrcA, the lowest notes of the first two eighth-note chords are G-sharps,
+  % but in SrcB, they are F-sharps. Follow SrcB, since I think it more likely
+  % aligns with the composer's intention, namely that the <gf c> from chords in
+  % the previous two measures change to the enharmonic <fs bs> in this measure
+  % for the key change.
+  <fs bs e> <fs bs ds> \acciaccatura { e' } <fs, bs ds> <fs bs css> <fs bs ds>
     <fs bs e> |
   \voiceOne <e cs'>8 <e ds'> <cs' e> <cs fs> <e gs> <cs e cs'> |
   b'8. a16 a2 |
