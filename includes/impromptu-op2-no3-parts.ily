@@ -48,6 +48,11 @@ rightHandUpper = \relative {
   c2. |
   
   \barNumberCheck 25
+  % SrcB ties the c16 to the C in chord <c e>4 in this measure, but no ties are
+  % present for any identical figurations in later measures. SrcA does not have
+  % the tie. At faster tempos, this tie could certainly facilitate performance.
+  % It would be interesting to consult the autograph manuscript for clues about
+  % the composer's intention.
   \voiceOne c8. \acciaccatura { \slurDown d8 } c16 <c e>4 \slurUp q~ |
   <c f>4 c2-> |
   <bf e>4 bf2-> |
@@ -253,7 +258,7 @@ leftHandLower = \relative {
   d,4 <a' b f' a> r |
   ds,4 <a' c f> <c f> |
   e,4 \voiceFour d'2 |
-  \oneVoice a4 <e' c'> <c a'> |
+  \oneVoice a4 <c a'> a |
   d,4 <a' b f' a> \clef bass d,
   \voiceFour e4 f e |
   \oneVoice a,4 <e' c'> <d c' f> |
