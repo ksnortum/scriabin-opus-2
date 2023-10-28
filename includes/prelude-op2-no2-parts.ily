@@ -30,7 +30,7 @@ rightHandUpper = \relative {
   e4)^\pp \oneVoice r r |
   \tuplet 3/2 { r8 ds,(\ppp gs,  as cs b  \voiceOne b, as' gs } |
   fs4) \oneVoice r <fs b fs'> |
-  \tuplet 3/2 { r8 gs' fs  gs, e' e, } ds''8.\fermata <e, cs'>16( |
+  \tuplet 3/2 { r8 gs'( fs  gs, e' e, } ds''8.)\fermata <e, cs'>16( |
   <ds b'>4) r r |
   \bar "|."
 }
